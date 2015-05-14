@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding:0;
+}
+
+.searchbar{
+    height: 50px;
+    display:none;
+    margin: 0;padding: 0px;
+    margin-left: 10px;
+}
+.searchbar input{
+    height: 100%;
+    width: 100%;
+    border: 0px;
+    padding-left: 2px;
+    font-size: 20px;
+    display: block;
+    outline: none;
+    padding-right: 44px;
+    margin-right: 50px;
+    font-size: 20px;
+    color: #313131;
+}
+
+.slide1{
+    height: 650px;width: 100%;
+    position: relative;
+}
+.imageDefond{
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/generic-hero-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.opacity{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+hr{
+    width: 275px;
+    display: block;
+}
+#browseProduct{
+
+    display: block;
+    width: 200px;
+    height: 43px;
+    line-height: 43px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgb(0, 90, 255);
+    margin: auto;
+    margin-top: 14px;
+}
+
+
+
+.contentCenter{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin-top: 108px;
+    margin-left: 467px;
+}
+#logo a img{
+    width: 300px;height: 47px;
+    margin-left: 87px;
+}
+.contentCenter h2{
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+    color: #fff;
+    margin: 25px auto 0;
+    max-width: 100%;
+}
+h2 span{
+    margin-left: 58px;
+}
+.aside_container{
+    position:absolute;
+    right: 0;top: 0;
+
+}
+
+.slide2{
+    height: 400px;
+    background-color: #f7ff6e;
+}
+.slide3{
+    height: 400px;
+    background-color: #ff464f;
+}
+/*********************************************************/
+#scrolldown{
+    position:absolute ;
+    bottom: 10%;
+    right: 3%;
+    font-size: xx-large;
+    color: cornflowerblue;
+}
+/*******************************************************************************************/
+
+.aside_container{
+    margin-right: 40px;
+    margin-top: 40px;
+    position: absolute;
+    right: 0;top:0;
+}
+#icons{
+    margin-left: 116px;
+
+
+}
+#icons  #span1{
+    margin-left: 20px;
+}
+#span1,#span2:hover{
+    cursor: pointer;
+}
+
+
+#icons span{
+    font-size: 25px;
+    color: #313131;
+}
+.menu ul li{
+    list-style-type: none;
+    line-height: 50px;
+    font-size: 30px;
+    border-bottom: dotted 1px #000000;
+    color: #313131;
+    font-weight: bold;
+    text-align: right;
+    cursor:pointer;
+}
+.menu ul li:hover{
+    color: #ffffff;
+}
+.menu{
+    display: none;
+}
+
+
+
+/******************************************************footer*/
+
+.slide3_footer{
+    height: 373px;
+    text-align: left;
+    background: #3e4645;
+    margin: 50px 0 0;
+    padding: 0;
+
+}
