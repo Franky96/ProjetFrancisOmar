@@ -154,11 +154,167 @@ h2 span{
 
 /******************************************************footer*/
 
-.slide3_footer{
+.content_footer{
     height: 373px;
-    text-align: left;
     background: #3e4645;
-    margin: 50px 0 0;
-    padding: 0;
+}
+.content1{
+    margin-right: 100px;
+    margin-left: 200px;
+    height: 40%;
+}
+.content2{
+    margin-right: 100px;
+    margin-left: 239px;
+    margin-top: 50px;
+}
+.content2 h4{
+    font-weight: bold;
+    color: white;
+    font-size: larger;
+    font-family: georgia;
+}
+.content2 input:first-child{
+    margin-right: 11px;
+    font-size: 13px;
+    padding: 4px 8px 3px;
+    border: 0;
+    min-height: 0;
+    min-width: 240px;
+    font-size: 15px;
+    color: #818181;
+    width: 224px;
+    height: 25px;
+    border-radius: 4px;
+}
+.content2 input:last-child {
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: Lato;
+    border: 1px solid white;
+    width: 33px;
+    height: 33px;
+    color: white;
+    background: transparent;
+}
+.content1 div{
+    margin-top: 40px;
+    float:left;
+    margin-right:100px ;
 
 }
+.content1 div ul li:first-child{
+    margin-bottom: 13px;
+    font-weight: bold;
+    color: white;
+    font-size: larger;
+    font-family: georgia;
+}
+.content1 div ul li{
+    margin-bottom: 6px;
+    margin-right: 5px;
+}
+.content1 div ul li{
+    list-style: none;
+    color: #9f9f9f;
+    cursor: pointer;
+}
+div ul li i{
+    margin-right: 12px;
+
+}
+.content3{
+    text-align: center;
+    margin-top: 37px;
+
+    color: #9f9f9f;
+    font-family: Lato;
+}
+
+
+/*********************************Formulaire Inscription*****/
+
+#formulaireInscription {
+    position: absolute;
+    left: -300px;
+    top: 0px;
+    width: 300px;
+    height: 350px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background:transparent;
+    margin-left: 3px;
+
+
+}
+
+#formulaire input:last-child {
+    display: block;
+    padding-left: 1px;
+    width: 50%;
+    height: 24px;
+    margin: auto;
+
+}
+
+.formulaire {
+
+    display: block;
+    border-radius: 5px;
+    padding-left: 4px;
+    width: 50%;
+    height: 24px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#formulaireInscription a.ouvrir {
+    position: absolute;
+    right: -70px;
+    top: 68px;
+    transform: rotate(270deg);
+    border-radius: 0 0 8px 8px;
+    padding: 10px 25px;
+    background: #555;
+    color: #fff;
+    text-decoration: none;
+}
+
+#formulaireInscription a.fermer {
+    position: absolute;
+    right: -70px;
+    top: 68px;
+    transform: rotate(270deg);
+    border-radius: 0 0 8px 8px;
+    padding: 10px 25px;
+    background: #555;
+    color: #fff;
+    text-decoration: none;
+    display: none;
+}
+
+#formulaireInscription_clos:target #formulaireInscription {
+    left: -300px;
+}
+
+#formulaireInscription {
+    -webkit-transition: all .5s ease-in;
+    transition: all 1s ease-in;
+}
+
+#formulaireInscription:target {
+    left: 0;
+}
+
+#formulaireInscription:target a.ouvrir {
+    display: none;
+}
+
+#formulaireInscription:target a.fermer {
+    display: block;
+}
+
+
+/*******************************************************/
