@@ -1,10 +1,10 @@
 /**
  * Created by omar on 11/05/2015.
  */
+
 var parite=0;
 var parite2=0;
 var deg=0;
-var scroll = true;
 
 
 window.onload=function(){
@@ -63,26 +63,16 @@ $("#span2").click(function () {
 
 //**************Fonction Scroller *************************
 
-$('a[href^="#slide2"]').click(function(){
+$('a[href^="#slide1"]').click(function(){
     console.log("marche");
-
     $('#i_scrolldown').css('transform', 'rotate(180deg)');
-
     var the_id = $(this).attr("href");
-    if(scroll == true){
         $('html, body').animate({
             scrollTop:$(the_id).offset().top
         }, 'slow');
-        scroll = false;
-    }
-    else{
-        $('html, body').animate({
-            scrollBottom:$(the_id).offset().bottom
-        }, 'slow');
-        scroll = true;
-    }
     return false;
 });
+
 
 
 

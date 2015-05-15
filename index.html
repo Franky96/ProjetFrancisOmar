@@ -11,7 +11,9 @@
     <input id="searchinput" type="search" placeholder="Search">
 </section>
 <div class="page_Wrapper">
-    <section class="slide1">
+    <span id="formulaireConnexion_clos"></span>
+    <span id="formulaireInscription_clos"></span>
+    <section class="slide0">
         <div class="imageDefond" id="imagefond">
             <div class="opacity"></div>
             <div id="formulaireInscription">
@@ -24,8 +26,21 @@
                     <input  type="submit" id="submit" value="Inscription">
                 </form>
 
-                <a href="#formulaireInscription" class="ouvrir">Open</a>
+                <a href="#formulaireInscription" class="ouvrir">Sign in</a>
                 <a href="#formulaireInscription_clos" class="fermer">Close</a>
+            </div>
+            <div id="formulaireConnexion">
+                <div id="formulaireCout">
+                    <form id="formulaireC">
+                        <h2>Inscription</h2>
+                        <input class="formulaire" type="text" id="loginC" name="login" required="required" placeholder="Nickname">
+                        <input class="formulaire" type="password" id="passwordC" name="password" required="required" placeholder="Password">
+                        <input  type="submit" id="submitC" value="Inscription">
+                    </form>
+
+                    <a href="#formulaireConnexion" class="ouvrir">Connection</a>
+                    <a href="#formulaireConnexion_clos" class="fermer">Close</a>
+                </div>
             </div>
             <div class="contentCenter">
                 <div id="logo"><a href="#"><img src="images/logo.png" alt="logo"> </a></div>
@@ -50,13 +65,16 @@
                     </ul>
                 </div>
             </div>
-            <a id="scrolldown" href="#slide2" data-action="scroll">
+            <a id="scrolldown" href="#slide1" data-action="scroll">
                 <i id="i_scrolldown" class="fa fa-chevron-down fa-lg"></i>
             </a>
         </div>
 
     </section>
+    <section id="slide1" class="slide1"></section>
     <section id="slide2" class="slide2"></section>
+    <section id="slide3" class="slide3"></section>
+    <section id="slide4" class="slide4"></section>
     <div class="content_footer">
         <div class="content1">
             <div>
