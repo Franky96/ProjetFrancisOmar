@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     padding:0;
@@ -6,7 +7,8 @@ body{
 .searchbar{
     height: 50px;
     display:none;
-    margin: 0;padding: 0;
+    margin: 0;
+    padding: 0;
     margin-left: 10px;
 }
 .searchbar input{
@@ -22,13 +24,8 @@ body{
     color: #313131;
 }
 
-.slide0{
-    height: 740px;
-    width: 100%;
-    position: relative;
-}
 .imageDefond{
-    height: 800px;
+    height: 110%;
     width: 100%;
     background-image: url("../images/generic-hero-background.jpg");
     background-repeat: no-repeat;
@@ -58,18 +55,14 @@ hr{
     text-align: center;
     border-radius: 4px;
     background-color: rgb(0, 90, 255);
-    margin: auto;
-    margin-top: 14px;
+    margin: 14px auto auto;
 }
-
-
-
 .contentCenter{
     position: absolute;
     left: 0;
     top: 0;
-    margin-top: 108px;
-    margin-left: 467px;
+    margin-top: 195px;
+    margin-left: 645px;
 }
 #logo a img{
     width: 300px;height: 47px;
@@ -91,22 +84,27 @@ h2 span{
     right: 0;top: 0;
 
 }
-
+/**************************************/
+.slide0{
+    height: 805px;
+    width: 100%;
+    position: relative;
+}
 .slide1{
-    height: 600px;
+    height: 500px;
     background-color: white;
 }
 .slide2{
-    height: 400px;
-    background-color: #f7ff6e;
+    height: 700px;
+    background-color: rgb(255, 70, 79);
+    position: relative;
+    display: none;
 }
 .slide3{
-    height: 400px;
-    background-color: #ff464f;
-}
-.slide4{
-    height: 400px;
-    background-color: #64ff64;
+    height: 700px;
+    background-color: rgb(100, 255, 100);
+    position: relative;
+    display: none;
 }
 /*********************************************************/
 #scrolldown{
@@ -119,6 +117,18 @@ h2 span{
 #scrolldown > i{
     transition: transform 1s;
 }
+.scrollup{
+    display: inline-block;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    position: absolute;
+    right: 55px;
+    bottom: 345px;
+    transform: rotate(180deg);
+}
+#scrollup3{
+    font-size: 250%;
+}
 /*******************************************************************************************/
 
 .aside_container{
@@ -128,12 +138,10 @@ h2 span{
     right: 0;top:0;
 }
 #icons{
-    margin-left: 116px;
-
-
+    margin-left: 231px;
 }
-#icons  #span1{
-    margin-left: 20px;
+#span1{
+    margin-left: 25px;
 }
 #span1,#span2:hover{
     cursor: pointer;
@@ -183,11 +191,10 @@ h2 span{
     font-weight: bold;
     color: white;
     font-size: larger;
-    font-family: georgia;
+    font-family: georgia sans-serif;
 }
 .content2 input:first-child{
     margin-right: 11px;
-    font-size: 13px;
     padding: 4px 8px 3px;
     border: 0;
     min-height: 0;
@@ -203,7 +210,7 @@ h2 span{
     font-weight: bold;
     border-radius: 5px;
     display: inline-block;
-    font-family: Lato;
+    font-family: Lato sans-serif;
     border: 1px solid white;
     width: 33px;
     height: 33px;
@@ -335,7 +342,23 @@ div ul li i{
 #formulaireInscription:target a.fermer {
     display: block;
 }
+/*******************************************************/
+#formulaireInscription > a.ouvrir:hover{
+    box-shadow: 0 -1px 10px rgb(53, 53, 53) inset;
+}
+#formulaireInscription > a.fermer{
+    box-shadow: 0 -2px 22px black inset;
+}
+#formulaireConnexion > #formulaireCout > a.ouvrir:hover{
+    box-shadow: 0 -6px 15px black inset;
 
+}
+#formulaireConnexion > #formulaireCout > a.fermer{
+    box-shadow: 0 -2px 22px black inset;
+}
+#browseProduct:hover{
+    box-shadow: 0 0 10px black inset;
+}
 
 /*******************************************************/
 #formulaireC{
@@ -431,3 +454,175 @@ div ul li i{
     display: block;
 }
 /****************************************************************/
+/*****************************Maps*******************************/
+#map{
+    width: 850px;
+    height: 500px;
+    margin: 100px 0 0 115px;
+    padding: 0 0 0 0;
+    display: inline-block;
+    float: left;
+}
+#map-canvas{
+    width: 850px;
+    height: 500px;
+    background-color: gray;
+    display: inline-block;
+    /*margin: 10px;*/
+}
+#map_info{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin: 100px 0 0 90px;
+    border-left: 3px solid white;
+    text-align: center;
+}
+#map_coor{
+    margin: 60px 0 0 0;
+    display: inline-block;
+    text-align: left;
+}
+#map_coor > h1{
+    color: white;
+    font-size: 285%;
+}
+#map_coor > dl > dt{
+    color: white;
+    font-size: 160%;
+    margin: 0 0 10px 0;
+}
+/*******************************************/
+#vid1{
+    width: 700px;
+    height: 400px;
+    margin: 100px 115px 0 0;
+    padding: 0 0 0 0;
+    display: inline-block;
+    float: right;
+}
+#vid2{
+    width: 700px;
+    height: 400px;
+    margin: 100px 0 0 115px;
+    padding: 0 0 0 0;
+    display: inline-block;
+    float: left;
+}
+#bottom_slide2{
+    position: absolute;
+    bottom: 0;
+    left: 560px;
+}
+#bottom_slide2 > h1{
+    display: inline-block;
+    color: white;
+    font-size: 400%;
+    margin: 0 400px 60px 0;
+}
+#bottom_slide2 > div{
+    display: inline-block;
+    transform: rotate(180deg);
+    font-size: 250%;
+}
+/************************************slide2*****/
+/*****************************A copier Coller***************/
+.slide1{
+    height: 1285px;
+    margin-top: 115px;
+}
+#ProductWrapper {
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 100%;
+
+}
+#ProductContent{
+    height: 82%;
+}
+#ProductTitle h2{
+    height: auto;
+    margin-top: 20px;
+    font-size: 40px;
+    color: #313131;
+    width: 100%;
+    text-align: center;
+    font-family: Lato sans-serif;
+
+}
+.produit{
+    height: auto;
+    width: 23%;
+    margin: 0 25px 30px 0;
+    float: left;
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+
+}
+.produit a{
+    display: block;
+    margin-bottom: 12px;
+}
+.produit a img{
+    width: 100%;
+    transition: transform .5s;
+}
+.produit a img:hover{
+    transform: scale(1.1,1.1);
+}
+.metas{
+    width: 50%;
+    float: left;
+    margin-left: 5px;
+}
+.status {
+    width: 44%;
+    display: inline-block;
+}
+.status a{
+    text-decoration: none;
+    text-align: right;
+    font-weight: bold;
+    color: #ff555d;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+.metas .title{
+    color: #919191;
+    font-weight: bold;
+    font-size: 14px;
+}
+.metas .price{
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+}
+#browseProduct2 {
+    display: block;
+    width: 200px;
+    height: 43px;
+    line-height: 43px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgb(0, 90, 255);
+    margin: auto;
+    margin-top: 68px;
+}
+#browseProduct2:hover{
+    box-shadow: 0 0 10px black inset;
+}
+
+
+
+
+
+
+
+
+

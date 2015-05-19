@@ -10,7 +10,7 @@ var deg=0;
 window.onload=function(){
     console.log("d�marrage");
     console.log(window.pageYOffset);
-
+    $('#bottom_slide2').hide();
 
 };
 
@@ -63,7 +63,7 @@ $("#span2").click(function () {
 
 //**************Fonction Scroller *************************
 
-$('a[href^="#slide1"]').click(function(){
+$('#scrolldown').click(function(){
     console.log("marche");
     $('#i_scrolldown').css('transform', 'rotate(180deg)');
     var the_id = $(this).attr("href");
@@ -72,10 +72,55 @@ $('a[href^="#slide1"]').click(function(){
         }, 'slow');
     return false;
 });
+$('#i_scrollup3').click(function(){
+    $('#slide3').css('display', 'none');
+});
+$('#i_scrollup2').click(function(){
+    $('#slide2').css('display', 'none');
+    $('#bottom_slide2').hide();
+});
+/*******************google maps***************************/
+
+function google_map(){
+    var LL = new google.maps.LatLng(37.794957, -122.402836);
+    var options = {
+        center: LL,
+        zoom: 17
+    };
+    var map = new google.maps.Map(document.getElementById('map-canvas'), options);
+    var marker = new google.maps.Marker({
+        position: LL,
+        map: map,
+        title: 'CALIFORNIA'
+    });
+}
+google.maps.event.addDomListener(window, 'load',google_map);
+
+/****************ancrer slide****************************/
 
 
-
-
+$('#menu_up3').click(function(){
+    console.log("coucou :)");
+    $('#slide3').slideDown(1000, 'swing');
+    $('html, body').animate({
+        scrollTop:$("#slide3").offset().top
+    }, 'slow');
+    google_map();
+});
+$('#menu_up2').click(function(){
+    console.log("coucou :)");
+    $('#slide2').slideDown(1000, 'swing');
+    $('html, body').animate({
+        scrollTop:$("#slide2").offset().top
+    }, 'slow');
+    $('#bottom_slide2').show(2000, 'swing');
+});
+$('#menu_up1').click(function(){
+    console.log("coucou :)");
+    $('html, body').animate({
+        scrollTop:$("#slide1").offset().top
+    }, 'slow');
+});
 
 
 
